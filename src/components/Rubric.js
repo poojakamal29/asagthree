@@ -18,7 +18,7 @@ function Rubric() {
           <ul className='rubric__items'>
 
             <RubricItem 
-              text = ""
+              text = "45 y/o male with no significant PMH here for back pain. Was moving a heavy filing cabinet 3 weeks ago when it fell over and he tried to catch it. Was fine that day but the following day developed persistent bilateral lower back pain, described as a 'knife-like' sensation rated 6/10 in severity but increases to 9/10 with movement and in some positions. No radiation of any pain anywhere and no nausea, vomiting, abdominal pain, weakness, numbness/tingling, bowel/bladder incontinence, fevers, chills, ro sweats. Father did have prostate cancer with mets to spine. Has been taking Ibuprofen and tylenol which helped initially but not recently. Has tried ice with no relief but refueses to try heat. "
             />
           </ul>
 
@@ -33,15 +33,11 @@ function Rubric() {
           <RubricItem 
               text='Began after moving furniture *'
           />
-          <RubricItem 
-              text='Worse with flexion and rotation'
-          />
+
           <RubricItem 
               text='Trying Motrin and Tylenol with slight relief *'
           />
-          <RubricItem 
-              text=' Pain radiates laterally across the lower back'
-          />
+
           <RubricItem 
               text=' Unable to perform usual exercise routine'
           />
@@ -55,15 +51,28 @@ function Rubric() {
               text='No bowel symptoms'
           />
 
-          <RubricItem
-              text='No bladder symptoms'
-          />
+
             
           <RubricItem 
               text='No LE weakness, numbness or tingling *'
           />
           <RubricItem 
               text=' No fever *'
+          />
+ 
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
+          <RubricItem 
+              text='Worse with flexion and rotation'
+          />
+          <RubricItem 
+              text=' Pain radiates laterally across the lower back'
+          />
+           <RubricItem
+              text='No bladder symptoms'
           />
           <RubricItem 
               text='No past medical history of note'
@@ -79,15 +88,7 @@ function Rubric() {
           />
           <RubricItem 
               text='No weight loss'
-          />             
-
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
-
- 
+          />            
           </ul>
         </div>
       </div>
@@ -105,7 +106,7 @@ function Rubric() {
         <h1>Your Physical Exam Answer</h1>
           <ul className='rubric__items'>
             <RubricItem
-            text = ''           
+            text = 'Tender over the lower paraspina,l muscles bilaterally. NOntender over the C, T , or L spine. Sensation and strength normal throughout. Negative SLR bilaterally. Normal heart and lungs. Reflezes 2+ and symmetric. '           
             />
           </ul>
 
@@ -117,9 +118,7 @@ function Rubric() {
           <RubricItem 
               text='Vital signs mentioned - normal'
           />
-          <RubricItem 
-              text='Pain on paraspinal palpation *'
-          />
+
           <RubricItem 
               text='Motor strength 5/5 in LE *'
           />
@@ -129,26 +128,31 @@ function Rubric() {
           <RubricItem 
               text=' Sensory intact in LE bilaterally'
           />
-          <RubricItem 
-              text=' Pulses 2/4 in DP/PT'
-          />
-          <RubricItem 
-              text='Limited range of motion of the back'
-          />
+
+
           <RubricItem 
               text=' No vertebral tenderness *'
           />
           <RubricItem 
               text='Babinski down going bilaterally'
           />
-          <RubricItem
-              text='Straight leg raise'
-          />
+
           </ul>
 
           <ul className='nocredit'>
           <h3> Items NOT Found in Note: </h3>
-
+          <RubricItem 
+              text='Pain on paraspinal palpation *'
+          />
+          <RubricItem 
+              text=' Pulses 2/4 in DP/PT'
+          />
+          <RubricItem 
+              text='Limited range of motion of the back'
+          />
+          <RubricItem
+              text='Straight leg raise'
+          />
           </ul>
         </div>
       </div>
@@ -167,7 +171,13 @@ function Rubric() {
 
           <ul className='rubric__items'>
             <RubricItem
-            text = ''
+            text = 'Musculoskeletal strain'
+            />
+                        <RubricItem
+            text = 'Disk herniation'
+            />
+                        <RubricItem
+            text = 'Compression fx (less likely)'
             />
           </ul>
 
@@ -185,13 +195,6 @@ function Rubric() {
           <ul className='credit'>
             <h3> Items Found in Note: </h3>
 
-            <RubricItem
-              text='Low back strain'
-            />    
-
-            <RubricItem
-              text='Lumbar Disc Disease'
-            />          
 
             <RubricItem 
               text='Cancer with spinal mets'
@@ -201,6 +204,13 @@ function Rubric() {
 
           <ul className='nocredit'>
           <h3> Items NOT Found in Note: </h3>
+          <RubricItem
+              text='Low back strain'
+            />    
+
+            <RubricItem
+              text='Lumbar Disc Disease'
+            />          
 
 
           </ul>
@@ -221,20 +231,8 @@ function Rubric() {
         </h4>
         <ul className='rubric__items'>
           <RubricItem className = 'length'
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />          
+              text='Nonev at this time'
+          />      
           </ul>
 
 
