@@ -18,7 +18,7 @@ function Rubric() {
           <ul className='rubric__items'>
 
             <RubricItem 
-              text = ""
+              text = "Patient is a 45y/o Caucasian male who presents with constant and worsening back pain that started 3 weeks ago after he moved his file cabinet around in his house. He states that he has had some back 'muscle twinges' in the past but nothing like this before. He describes the pain as sharp, knife-like, stabbing pain, localized to the lower back region that does not radiate elsewhere. The pain is worsened with movements and bending forward make is more painful. He rates the pain 6/10 when standing and 8/10 when bending. The patient has tried over-the-counter ibuprofen and acetaminophen, which provided minimal relief initially but are not not helping currently. Patient denies any fever, SOB, chest pain, muscle weakness, dysuria, urinary retention, fecal incontinence or constipation. "
             />
           </ul>
 
@@ -33,9 +33,7 @@ function Rubric() {
           <RubricItem 
               text='Began after moving furniture *'
           />
-          <RubricItem 
-              text='Worse with flexion and rotation'
-          />
+
           <RubricItem 
               text='Trying Motrin and Tylenol with slight relief *'
           />
@@ -44,6 +42,19 @@ function Rubric() {
           />
           <RubricItem 
               text=' Unable to perform usual exercise routine'
+          />
+
+          <RubricItem 
+              text=' No fever *'
+          />
+
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
+          <RubricItem 
+              text='Worse with flexion and rotation'
           />
           <RubricItem 
               text='Father with history of prostate cancer with spine mets'
@@ -63,9 +74,6 @@ function Rubric() {
               text='No LE weakness, numbness or tingling *'
           />
           <RubricItem 
-              text=' No fever *'
-          />
-          <RubricItem 
               text='No past medical history of note'
           />
           <RubricItem 
@@ -80,13 +88,6 @@ function Rubric() {
           <RubricItem 
               text='No weight loss'
           />             
-
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
-
  
           </ul>
         </div>
@@ -105,7 +106,7 @@ function Rubric() {
         <h1>Your Physical Exam Answer</h1>
           <ul className='rubric__items'>
             <RubricItem
-            text = ''           
+            text = 'Tenderness to percussion of the thoracolumbar region of the spine bilaterally, 2+ patellar and ankle reflexes bilaterally, normal gait'           
             />
           </ul>
 
@@ -114,6 +115,25 @@ function Rubric() {
 
           <ul className='credit'>
             <h3> Items Found in Note: </h3>
+
+          <RubricItem 
+              text=' Reflexes 2/4 in LE bilaterally'
+          />
+          <RubricItem 
+              text=' Sensory intact in LE bilaterally'
+          />
+
+          <RubricItem 
+              text=' No vertebral tenderness *'
+          />
+          <RubricItem 
+              text='Babinski down going bilaterally'
+          />
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
           <RubricItem 
               text='Vital signs mentioned - normal'
           />
@@ -124,31 +144,14 @@ function Rubric() {
               text='Motor strength 5/5 in LE *'
           />
           <RubricItem 
-              text=' Reflexes 2/4 in LE bilaterally'
-          />
-          <RubricItem 
-              text=' Sensory intact in LE bilaterally'
-          />
-          <RubricItem 
               text=' Pulses 2/4 in DP/PT'
           />
           <RubricItem 
               text='Limited range of motion of the back'
-          />
-          <RubricItem 
-              text=' No vertebral tenderness *'
-          />
-          <RubricItem 
-              text='Babinski down going bilaterally'
-          />
-          <RubricItem
+          />  
+                    <RubricItem
               text='Straight leg raise'
-          />
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
+          />        
           </ul>
         </div>
       </div>
@@ -167,7 +170,13 @@ function Rubric() {
 
           <ul className='rubric__items'>
             <RubricItem
-            text = ''
+            text = 'Lumbosacral sprain'
+            />
+                        <RubricItem
+            text = 'Degenerative joint disease'
+            />
+                                    <RubricItem
+            text = 'Prostate Cancer'
             />
           </ul>
 
@@ -185,13 +194,6 @@ function Rubric() {
           <ul className='credit'>
             <h3> Items Found in Note: </h3>
 
-            <RubricItem
-              text='Low back strain'
-            />    
-
-            <RubricItem
-              text='Lumbar Disc Disease'
-            />          
 
             <RubricItem 
               text='Cancer with spinal mets'
@@ -201,6 +203,13 @@ function Rubric() {
 
           <ul className='nocredit'>
           <h3> Items NOT Found in Note: </h3>
+          <RubricItem
+              text='Low back strain'
+            />    
+
+            <RubricItem
+              text='Lumbar Disc Disease'
+            />          
 
 
           </ul>
@@ -221,20 +230,8 @@ function Rubric() {
         </h4>
         <ul className='rubric__items'>
           <RubricItem className = 'length'
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />          
+              text='Can consider X-ray later on to see if there are any spinous changes if the pain persists. '
+          />        
           </ul>
 
 
