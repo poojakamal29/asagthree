@@ -10,7 +10,11 @@ import FacultyCardTwo from './components/pages/FacultyCardTwo';
 import FacultyCardThree from './components/pages/FacultyCardThree';
 import Student from './components/pages/Student';
 import Studentlist from './components/pages/Studentlist';
-//import Login from './login.js';
+import StudentOne from './components/pages/StudentOne';
+import StudentTwo from './components/pages/StudentTwo';
+import StudentThree from './components/pages/StudentThree'
+import StudentFour from './components/pages/StudentFour'
+import StudentFive from './components/pages/StudentFive'
 
 
 function App() {
@@ -27,6 +31,12 @@ function App() {
           <Route path='/facultycardthree' component={FacultyCardThree} />
           <Route path='/student' component={Student} />
           <Route path='/studentlist' component={Studentlist} />
+          <Route path='/studentone' component={StudentOne} />
+          <Route path='/studenttwo' component={StudentTwo} />
+          <Route path='/studentthree' component={StudentThree} />
+          <Route path='/studentfour' component={StudentFour} />
+          <Route path='/studentfive' component={StudentFive} />
+
         </Switch>
       </Router>
     </>

@@ -1,64 +1,54 @@
 import React from 'react';
 import '../../App.css';
 import { Button } from '../Button';
-
+import './Studentlist.css';
 import { Link } from 'react-router-dom';
 
 export default function Studentlist() {
     return (
         <>
-            <h1> Student Number </h1>
-            <Button>
-                <Link to='/facultycardthree'> 530 </Link>
+            <h1> Which learner's feedback would you like to view? </h1>
+            <div className = 'students'>
+            <ul className = 'list'>
+            <Link to='/studentone'>
+            <Button className = 'buttonx' buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                701 
             </Button>
+            </Link>
             
-            <Button>
-                <Link to='/facultycardthree'> 531 </Link>
+            <Link to='/studenttwo'>
+            <Button buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                702
             </Button>
-            <Button>
-                <Link to='/facultycardthree'> 532 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 533 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 534 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 535 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 536 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 537 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 538 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 539 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 540 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 541 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 542 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 543 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 544                                                                                 </Link>
-            </Button>
-            <Button>
-                <Link to='/facultycardthree'> 545               </Link>
-            </Button>
+            </Link>
 
-            <section className='footer-subscription'>
+            <Link to='/studentthree'>
+            <Button buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                703
+            </Button>
+            </Link>
+
+            <Link to='/studentfour'>
+            <Button buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                704
+            </Button>
+            </Link>
+
+            <Link to='/studentfive'>
+            <Button buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                705
+            </Button>
+            </Link>
+
+            <Link to='/facultycardthree'>
+            <Button buttonStyle = 'btn--primary' buttonSize= 'btn--large'>
+                706
+            </Button>
+            </Link>            
+            </ul>
+            </div>
+
+            {/* <section className='footer-subscription'>
             <p className='footer-subscription-text'>
             Search for a student:
             </p>
@@ -73,7 +63,7 @@ export default function Studentlist() {
                 <Button buttonStyle='btn--test'>search</Button>
             </form>
             </div>
-        </section>
+        </section> */}
         </>
     );
 }

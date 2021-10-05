@@ -5,7 +5,6 @@ import './HeroSection.css';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-
 function HeroSection() {
   const closeMobileMenu = () => setClick(false);
   const [click, setClick] = useState(false);
@@ -14,7 +13,7 @@ function HeroSection() {
     <div className='hero-container'>
       <h1>Which one are you?</h1>
       <div className='hero-btns'>
-        <Link to='/facultycardtwo'>
+        <Link to='/faculty'>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -24,7 +23,7 @@ function HeroSection() {
           </Button>
         </Link>
 
-        <Link to='/student'>
+        <Link to='/facultycardtwo'>
           <Button
             className='btns'
             buttonStyle='btn--outline'

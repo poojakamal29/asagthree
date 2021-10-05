@@ -1,123 +1,122 @@
 import React from 'react';
 import '../../App.css';
-import Rubric from '../Rubric';
 import RubricItem from '../RubricItem';
+import './FacultyCardOne.css'
 
 
 export default function FacultyCardOne() {
     return (
         <>
+        <h4> Note: Items highlighted in blue are the ones with high machine confidence</h4>
+        <h3> Numbers shown below: number of students who received credit for the checklist item / total number of students </h3>        
         <h1> History Checklist Item Feedback</h1> 
-        <h3> Number of learners who received credit</h3>
+        <ul className = 'confident'>
         <RubricItem 
-              text='PPNBP3WEEKS: 95'
+              text='Back pain for 3 weeks described as dull ache exacerbated by any movement: 4/6'
             />
+
         <RubricItem 
-              text='PPNFURNITURE: 87'
+              text='Began after moving furniture: 5/6'
             />
+        
+        </ul>
         <RubricItem 
-              text='PPNFLEX: 40'
+              text='Worse with flexion and rotation: 2/6'
             />        
+        <ul className = 'confident'>
         <RubricItem 
-              text='PPNTYLENOL: 40'
+              text='Trying Motrin and Tylenol with slight relief: 5/6'
             />       
+        </ul>
         <RubricItem 
-              text='PPNRADIATE: 40'
+              text='Pain radiates laterally across the lower back: 2/6'
             />       
 
         <RubricItem 
-              text='PPNEXERCISE: 40'
+              text='Unable to perform usual exercise routine: 6/6'
             />
         <RubricItem 
-              text='PPNFATHERHIST: 40'
+              text='Father with history of prostate cancer with spine mets: 2/6'
             />
         <RubricItem 
-              text='PNNLEGS: 40'
+              text='No radiation to the legs: 2/6'
             />   
         <RubricItem 
-              text='PNNBOWEL: 40'
+              text='No bowel symptoms: 2/6'
             />   
         <RubricItem 
-              text='PNNBLADDER: 40'
+              text='No bladder symptoms: 0/6'
             />   
+        <ul className = 'confident'>
         <RubricItem 
-              text='PNNLE: 40'
-            />   
+              text='No LE weakness, numbness or tingling: 3/6'
+            />  
         <RubricItem 
-              text='PNNFEVER: 40'
-            />   
+              text='No fever: 4/6'
+            />  
+        </ul> 
+
         <RubricItem 
-              text='PNNPHIST: 40'
+              text='No past medical history of note: 1/6'
             />
         <RubricItem 
-              text='PNNIV: 40'
+              text='No IV drug use in the past: 0/6'
             />
         <RubricItem 
-              text='PNNSMOKE: 40'
+              text='No smoking in the past: 2/6'
             />
         <RubricItem 
-              text='PNNALCH: 40'
+              text='No concerning alcohol use: 0/6'
             />
         <RubricItem 
-              text='PNNWL: 40'
+              text='No weight loss: 0/6'
             />
-        <h1> Physical Exam Chechlist Item Feedback</h1> 
+        <h1> Physical Exam Checklist Item Feedback</h1> 
         <RubricItem 
-              text='PEPPAIN: 40'
-            />
+              text='Vital signs mentioned - normal: 2/6'
+            />        
+        <ul className = 'confident'> 
         <RubricItem 
-              text='PEPLEMS: 40'
-            />
-        <RubricItem 
-              text='PEPLEREFLEX: 40'
+              text='Pain on paraspinal palpation: 3/6'
             />
         <RubricItem 
-              text='PEPLESENSE: 40'
+              text='Motor strength 5/5 in LE: 4/6'
+            />
+        </ul>
+        <RubricItem 
+              text='Reflexes 2/4 in LE bilaterally: 5/6'
             />
         <RubricItem 
-              text='PEPDPPULSE: 40'
+              text=' Sensory intact in LE bilaterally: 4/6'
             />
         <RubricItem 
-              text='PEPBACKROM: 40'
+              text='Pulses 2/4 in DP/PT: 0/6'
             />
         <RubricItem 
-              text='PEPTVITSIGNS: 40'
+              text='Limited range of motion of the back: 1/6'
+            />
+        <ul className = 'confident'> 
+        <RubricItem 
+              text='No vertebral tenderness: 4/6'
+            />
+        </ul>
+        <RubricItem 
+              text='Babinski down going bilaterally: 6/6'
             />
         <RubricItem 
-              text='PENVTENDER: 40'
-            />
-        <RubricItem 
-              text='PENBABINSKI: 40'
-            />
-        <RubricItem 
-              text='PENLEGRAISE: 40'
+              text='Straight leg raise: 1/6'
             />
         <h1> Diagnosis Item Checklist Item Feedback</h1>
         <RubricItem 
-              text='DDXLBSTRAIN: 40'
+              text='Low back strain: 0/6'
             />
         <RubricItem 
-              text='DDXLDISCD: 40'
+              text='Lumbar Disc Disease: 0/6'
             />
         <RubricItem 
-              text='DDXCANCER: 40'
+              text='Cancer with spinal mets: 3/6'
             />
-         <h1> Test Ordered Checklist Item Feedback</h1>
-        <RubricItem 
-              text='TESTMRI: 40'
-            />
-        <RubricItem 
-              text='TESTPSA: 40'
-            />
-        <RubricItem 
-              text='TESTPE: 40'
-            />
-        <RubricItem 
-              text='TESTOTHER: 40'
-            />
-
-
-                         
+   
         </>
 
     )
